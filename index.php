@@ -145,7 +145,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
         echo"<p id='email' style='font-size:small;'>Email: johnxiler@mail.com</p>";
         echo "<p id='address' style='font-size:small;'>Address: Lag-on, Daet Camarines Norte</p>";
         echo "<p id='contact' style='font-size:medium;'>Linkedin:<a href='https://www.linkedin.com/in/johnrelixpascua/'> https://www.linkedin.com/in/johnrelixpascua/</a></p>";
-        echo"<p id='intro'>Solution-focused Python Developer with 2+ years of experience developing web applications using Python, JAVA, and Spring. Instrumental in writing code, implementing Python applications, ensuring data security and protection, and identifying data storage solutions. Expertise in data processing automation using python, machine learning, and multi-process architecture.</p>";
+        echo"<p id='intro'>Solution-focused Python Developer with 2+ years of experience developing web applications using Python, JAVA, and Javascript. Instrumental in writing code, implementing Python applications, ensuring data security and protection, and identifying data storage solutions. Expertise in data processing automation using python, machine learning, and multi-process architecture.</p>";
      ?>
      </p>
     </div>
