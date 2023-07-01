@@ -11,7 +11,6 @@
       /* Styles unchanged */
       .container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: 20px;
         align-items: start;
         justify-items: center;
@@ -28,10 +27,21 @@
       /* Add any additional styling for the columns */
       .card1 {
         grid-column: 1;
+        margin-bottom: 20px;
       }
 
       .card2 {
-        grid-column: 2;
+        grid-column: 1;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .card2 {
+          grid-column: 2;
+        }
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
