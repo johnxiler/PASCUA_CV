@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CV</title>
-    
+    <title>GitHub Portfolio</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    
+
     <style>
-      /* Styles unchanged */
       * {
         box-sizing: border-box;
       }
@@ -17,6 +15,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Roboto', sans-serif;
+        background-color: #f5f5f5;
       }
 
       .container {
@@ -26,9 +25,9 @@
       }
 
       .card {
-        background-color: #D4E4F7;
-        border-radius: 15px;
-        box-shadow: 0 0 2px white;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         padding: 20px;
         margin-bottom: 20px;
       }
@@ -37,36 +36,53 @@
         text-align: center;
         font-size: 24px;
         margin-bottom: 20px;
+        color: #0366d6;
       }
 
       .subtitle {
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 10px;
+        color: #0366d6;
       }
 
       .paragraph {
         margin-bottom: 10px;
       }
+
+      .link {
+        color: #0366d6;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+      }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
-      <h1 class="title">CURRICULUM VITAE</h1>
+      <h1 class="title">GitHub Portfolio</h1>
       <div class="card">
         <div>
           <h2 class="subtitle">John Relix Pascua</h2>
           <p class="paragraph">Email: johnrelixp@mail.com</p>
           <p class="paragraph">Address: Lag-on, Daet Camarines Norte</p>
-          <p class="paragraph">LinkedIn: <a href="https://www.linkedin.com/in/johnrelixpascua/">https://www.linkedin.com/in/johnrelixpascua/</a></p>
+          <p class="paragraph">
+            LinkedIn: <a class="link" href="https://www.linkedin.com/in/johnrelixpascua/">https://www.linkedin.com/in/johnrelixpascua/</a>
+          </p>
         </div>
         <div>
           <h3 class="subtitle">Objective:</h3>
-          <p class="paragraph">Highly motivated and detail-oriented programmer seeking an entry-level position to utilize technical skills and contribute to software development projects. Eager to learn and grow in a dynamic and collaborative team environment.</p>
+          <p class="paragraph">
+            Highly motivated and detail-oriented programmer seeking an entry-level position to utilize technical skills and contribute to software development projects. Eager to learn and grow in a dynamic and collaborative team environment.
+          </p>
           <h3 class="subtitle">Skills:</h3>
           <ul>
             <li>Programming Languages: Proficient in Java, C++, Python</li>
@@ -78,7 +94,7 @@
             <li>Adaptability: Quick learner and flexible in handling new technologies</li>
           </ul>
         </div>
-      </div><!--end of card1-->
+      </div>
       <div class="card">
         <div>
           <h2 class="subtitle">Education:</h2>
@@ -104,7 +120,7 @@
             <li>Conducted unit testing and resolved bugs to improve system reliability.</li>
           </ul>
         </div>
-      </div><!--end of card2-->
+      </div>
       <div class="card">
         <div>
           <h2 class="subtitle">Experience:</h2>
@@ -129,7 +145,7 @@
           <h2 class="subtitle">References:</h2>
           <p class="paragraph">Available upon request</p>
         </div>
-      </div><!--end of card3-->
-    </div><!--end of container-->
+      </div>
+    </div>
   </body>
 </html>
