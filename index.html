@@ -9,10 +9,29 @@
     
     <style>
       /* Styles unchanged */
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+        justify-items: center;
+      }
+
+      .card1, .card2 {
+        background-color: #D4E4F7;
+        border-radius: 15px;
+        box-shadow: 0 0 2px white;
+        overflow: hidden;
+        padding: 20px;
+      }
+
+      /* Add any additional styling for the columns */
+      .card1 {
+        grid-column: 1;
+      }
+
       .card2 {
-        background-color: #FFD700;
-        color: black;
-        font-weight: bold;
+        grid-column: 2;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +41,7 @@
   </head>
   <body>
     <p class="title">CURRICULUM VITAE</p>
-    <div class="card-options">
+    <div class="container">
       <div class="card1">
         <div class="image-box">
           <img id="profile" style="display: block; border-radius: 100%; margin-left: auto;
@@ -42,30 +61,30 @@
         <div>
           <h1 class="head">SKILLS</h1>
           <p class="parag">Hard Skills:</p>
-          <p class="parag">I have knowledge in different programming language and frameworks such as</p>
+          <p class="parag">I have knowledge in different programming languages and frameworks such as</p>
           <p class="parag">Python, Java, Javascript, Solidity for blockchain development and their famous frameworks TypeScript, Django, Spring Boot, Database, Back End, Scripting, Git, SQL, Unix, GitHub, Linux, PostgreSQL, and MongoDB environment</p>
           <p class="parag">Implemented full-stack programming techniques to develop a mission-critical external web app, which increased user retention by 78%.</p>
           <p class="parag">Soft Skills:</p>
           <p class="parag">I can communicate in English and Tagalog, and I can work with a team of developers if the company needs it.</p>
-          <div>
-            <h1 class="head">EDUCATIONAL BACKGROUND</h1>
-            <p class="parag">Bachelor of Science Major in Information Technology (first entry year 2013)</p>
-            <p class="parag">St.Claire Institute of Technology (TechVoc Course) (2011)</p>
-            <p class="parag">Porfirio R. Ponayo High School (2007-2010)</p>
-            <p class="parag">Don Emiliano L. Pabico Elementary School (2003-2007)</p>
-          </div>
-          <div>
-            <h1 class="head">WORK HISTORY</h1>
-            <p class="parag">Central Plaza Corporation/Daet, Camarines Norte/(2012)<br>
-            7-Eleven Corp./Daet, Camarines Norte/(2012)<br>
-            Fotograce/Daet, Camarines Norte/(2012)<br> I work here as a sales associate and performed clerical jobs, helping the company maintain sales and customer relations.</p>
-          </div>
-          <div>
-            <h1 class="head">ACCOMPLISHMENTS</h1>
-            <p class="parag">I have a strong focus on learning by doing and watching programming videos rather than relying solely on reading resources. I also enjoy playing the guitar and playing games in my free time.</p>
-          </div>
         </div>
-      </div>
-    </div><!--end of card1-->
+        <div>
+          <h1 class="head">EDUCATIONAL BACKGROUND</h1>
+          <p class="parag">Bachelor of Science Major in Information Technology (first entry year 2013)</p>
+          <p class="parag">St.Claire Institute of Technology (TechVoc Course) (2011)</p>
+          <p class="parag">Porfirio R. Ponayo High School (2007-2010)</p>
+          <p class="parag">Don Emiliano L. Pabico Elementary School (2003-2007)</p>
+        </div>
+        <div>
+          <h1 class="head">WORK HISTORY</h1>
+          <p class="parag">Central Plaza Corporation/Daet, Camarines Norte/(2012)<br>
+          7-Eleven Corp./Daet, Camarines Norte/(2012)<br>
+          Fotograce/Daet, Camarines Norte/(2012)<br> I work here as a sales associate and performed clerical jobs, helping the company maintain sales and customer relations.</p>
+        </div>
+        <div>
+          <h1 class="head">ACCOMPLISHMENTS</h1>
+          <p class="parag">I have a strong focus on learning by doing and watching programming videos rather than relying solely on reading resources. I also enjoy playing the guitar and playing games in my free time.</p>
+        </div>
+      </div><!--end of card2-->
+    </div><!--end of container-->
   </body>
 </html>
