@@ -9,39 +9,44 @@
     
     <style>
       /* Styles unchanged */
-      .container {
-        display: grid;
-        gap: 20px;
-        align-items: start;
-        justify-items: center;
+      * {
+        box-sizing: border-box;
       }
 
-      .card1, .card2 {
-        background-color: #D4E4F7;
-        border-radius: 15px;
-        box-shadow: 0 0 2px white;
-        overflow: hidden;
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
         padding: 20px;
       }
 
-      /* Add any additional styling for the columns */
-      .card1 {
-        grid-column: 1;
+      .card {
+        background-color: #D4E4F7;
+        border-radius: 15px;
+        box-shadow: 0 0 2px white;
+        padding: 20px;
         margin-bottom: 20px;
       }
 
-      .card2 {
-        grid-column: 1;
+      .title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
       }
 
-      @media (min-width: 768px) {
-        .container {
-          grid-template-columns: 1fr 1fr;
-        }
+      .subtitle {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
 
-        .card2 {
-          grid-column: 2;
-        }
+      .paragraph {
+        margin-bottom: 10px;
       }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,87 +55,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <p class="title">CURRICULUM VITAE</p>
     <div class="container">
-      <div class="card1">
-        <div class="image-box">
-          <img id="profile" style="display: block; border-radius: 100%; margin-left: auto;
-  margin-right: auto;" src="https://i.ibb.co/pQGmtZR/2x2pic.jpg" alt="2x2pic"/>
+      <h1 class="title">CURRICULUM VITAE</h1>
+      <div class="card">
+        <div>
+          <h2 class="subtitle">John Relix Pascua</h2>
+          <p class="paragraph">Email: johnrelixp@mail.com</p>
+          <p class="paragraph">Address: Lag-on, Daet Camarines Norte</p>
+          <p class="paragraph">LinkedIn: <a href="https://www.linkedin.com/in/johnrelixpascua/">https://www.linkedin.com/in/johnrelixpascua/</a></p>
         </div>
         <div>
-          <p>
-            <p id="name" style="font-size:big;">John Relix Pascua</p>
-            <p id="email" style="font-size:small;">Email: johnrelixp@mail.com</p>
-            <p id="address" style="font-size:small;">Address: Lag-on, Daet Camarines Norte</p>
-            <p id="contact" style="font-size:medium;">Linkedin:<a href="https://www.linkedin.com/in/johnrelixpascua/"> https://www.linkedin.com/in/johnrelixpascua/</a></p>
-            <h4>Objective:</h4>
-            <p id="intro">Highly motivated and detail-oriented programmer seeking an entry-level position to utilize technical skills and contribute to software development projects. Eager to learn and grow in a dynamic and collaborative team environment.</p>
-            <p id="intro">Solution-focused Python Developer with 2+ years of experience developing web applications using Python, JAVA, and Javascript. Instrumental in writing code, implementing Python applications, ensuring data security and protection, and identifying data storage solutions. Expertise in data processing automation using python, machine learning, and multi-process architecture.</p>
-          </p>
+          <h3 class="subtitle">Objective:</h3>
+          <p class="paragraph">Highly motivated and detail-oriented programmer seeking an entry-level position to utilize technical skills and contribute to software development projects. Eager to learn and grow in a dynamic and collaborative team environment.</p>
+          <h3 class="subtitle">Skills:</h3>
+          <ul>
+            <li>Programming Languages: Proficient in Java, C++, Python</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Database Management: MySQL, MongoDB</li>
+            <li>Version Control: Git</li>
+            <li>Problem-Solving: Strong analytical and logical thinking skills</li>
+            <li>Teamwork: Effective collaboration and communication abilities</li>
+            <li>Adaptability: Quick learner and flexible in handling new technologies</li>
+          </ul>
         </div>
       </div><!--end of card1-->
-      <div class="card2">
+      <div class="card">
         <div>
-          <h1 class="head">SKILLS</h1>
-          <p class="parag">Hard Skills:</p>
-          <p class="parag">I have knowledge in different programming languages and frameworks such as</p>
-          <p class="parag">Python, Java, Javascript, Solidity for blockchain development and their famous frameworks TypeScript, Django, Spring Boot, Database, Back End, Scripting, Git, SQL, Unix, GitHub, Linux, PostgreSQL, and MongoDB environment</p>
-          <p class="parag">Implemented full-stack programming techniques to develop a mission-critical external web app, which increased user retention by 78%.</p>
-          <p class="parag">Soft Skills:</p>
-          <p class="parag">I can communicate in English and Tagalog, and I can work with a team of developers if the company needs it.</p>
+          <h2 class="subtitle">Education:</h2>
+          <p class="paragraph">Bachelor of Science Major in Information Technology (first entry year 2013)</p>
+          <p class="paragraph">St.Claire Institute of Technology (TechVoc Course) (2011)</p>
+          <p class="paragraph">Porfirio R. Ponayo High School (2007-2010)</p>
+          <p class="paragraph">Don Emiliano L. Pabico Elementary School (2003-2007)</p>
         </div>
         <div>
-          <h1 class="head">Education:</h1>
-          <p class="parag">Bachelor of Science Major in Information Technology (first entry year 2013)</p>
-          <p class="parag">St.Claire Institute of Technology (TechVoc Course) (2011)</p>
-          <p class="parag">Porfirio R. Ponayo High School (2007-2010)</p>
-          <p class="parag">Don Emiliano L. Pabico Elementary School (2003-2007)</p>
-          <p class="parag">Bachelor of Science in Information Technology (Expected Graduation: 2024)</p>
-          <p class="parag">Camarines Norte State College, Bicol, Philippines</p>
-        </div>
-        <div>
-          <h1 class="head">Skills:</h1>
-          <p class="parag">- Programming Languages: Proficient in Java, C++, Python</p>
-          <p class="parag">- Web Development: HTML, CSS, JavaScript</p>
-          <p class="parag">- Database Management: MySQL, MongoDB</p>
-          <p class="parag">- Version Control: Git</p>
-          <p class="parag">- Problem-Solving: Strong analytical and logical thinking skills</p>
-          <p class="parag">- Teamwork: Effective collaboration and communication abilities</p>
-          <p class="parag">- Adaptability: Quick learner and flexible in handling new technologies</p>
-          <br>
-          <h1 class="head">Projects:</h1>
-          <p class="parag">I have a strong focus on learning by doing and watching programming videos rather than relying solely on reading resources. I also enjoy playing the guitar and playing games in my free time.</p>
-          <p class="parag">1. E-commerce Website
-   - Developed a responsive e-commerce website using HTML, CSS, and JavaScript.
-   - Implemented shopping cart functionality and integrated secure payment gateways.
-   - Optimized website performance and ensured cross-browser compatibility.
-   - Collaborated with a team of designers and testers to deliver a high-quality product.</p>
-          <p class="parag">2. Inventory Management System
-   - Built an inventory management system using Java and MySQL.
-   - Designed a user-friendly interface for adding, updating, and retrieving product information.
-   - Implemented data validation and error handling to ensure data integrity.
-   - Conducted unit testing and resolved bugs to improve system reliability.</p>
-        <p class="parag">Experience:
-Intern, Software Development
-Company Name, City, State
-Dates
-
-- Assisted in the development and testing of software applications under the guidance of senior developers.
-- Collaborated with cross-functional teams to identify and resolve software issues.
-- Participated in code reviews to ensure adherence to coding standards and best practices.
-- Contributed to the documentation of software requirements and user manuals.</p>
-        <p class="parag">
-Certifications:
-- Java Programming Certification, [Certification Authority], Year
-- Web Development Certification, [Certification Authority], Year</p>
-        <p class="parag">
-Professional Affiliations:
-- Member, [Professional Association/Organization], Year - Present</p>
-        <p class="parag">
-References:
-Available upon request</p>
+          <h2 class="subtitle">Projects:</h2>
+          <p class="paragraph">1. E-commerce Website</p>
+          <ul>
+            <li>Developed a responsive e-commerce website using HTML, CSS, and JavaScript.</li>
+            <li>Implemented shopping cart functionality and integrated secure payment gateways.</li>
+            <li>Optimized website performance and ensured cross-browser compatibility.</li>
+            <li>Collaborated with a team of designers and testers to deliver a high-quality product.</li>
+          </ul>
+          <p class="paragraph">2. Inventory Management System</p>
+          <ul>
+            <li>Built an inventory management system using Java and MySQL.</li>
+            <li>Designed a user-friendly interface for adding, updating, and retrieving product information.</li>
+            <li>Implemented data validation and error handling to ensure data integrity.</li>
+            <li>Conducted unit testing and resolved bugs to improve system reliability.</li>
+          </ul>
         </div>
       </div><!--end of card2-->
+      <div class="card">
+        <div>
+          <h2 class="subtitle">Experience:</h2>
+          <p class="paragraph">Intern, Software Development</p>
+          <p class="paragraph">Company Name, City, State</p>
+          <p class="paragraph">Dates</p>
+          <ul>
+            <li>Assisted in the development and testing of software applications under the guidance of senior developers.</li>
+            <li>Collaborated with cross-functional teams to identify and resolve software issues.</li>
+            <li>Participated in code reviews to ensure adherence to coding standards and best practices.</li>
+            <li>Contributed to the documentation of software requirements and user manuals.</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="subtitle">Certifications:</h2>
+          <ul>
+            <li>Java Programming Certification, [Certification Authority], Year</li>
+            <li>Web Development Certification, [Certification Authority], Year</li>
+          </ul>
+          <h2 class="subtitle">Professional Affiliations:</h2>
+          <p class="paragraph">Member, [Professional Association/Organization], Year - Present</p>
+          <h2 class="subtitle">References:</h2>
+          <p class="paragraph">Available upon request</p>
+        </div>
+      </div><!--end of card3-->
     </div><!--end of container-->
   </body>
 </html>
